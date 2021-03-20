@@ -39,7 +39,7 @@ function CustomSearch({breeds, show, close}) {
             <select ref={breedOption} style={{width:"80%"}}>
               <option value="#">Select a Breed</option>
               {Object.entries(breeds)
-               .map((breed, i) =><option key={breed[0]} value={breed[0]}>{breed[0]}</option>)}              
+               .map((breed, i) =><option className="text-capitalize" key={breed[0]} value={breed[0]}>{breed[0]}</option>)}              
             </select>
             </Col>
             <Col lg="6">
