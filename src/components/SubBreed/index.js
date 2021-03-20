@@ -11,7 +11,7 @@ const SubBreed = ({breed, subBreed, show, close}) => {
                 <Row className="text-center text-capitalize col-12">
                     <h5>Sub Breeds</h5>
                 </Row>
-                <Row className="text-center">
+                <Row className="text-center m-auto p-auto">
                     {subBreed.length!==0?
                     subBreed.map((subBreedName, index)=><CardTemplate styles={styles} key={index} breedName={breed} subBreedName={subBreedName}/>)
                     :<h6 className="text-center text-capitalize col-12">No Data Available</h6>
@@ -20,7 +20,7 @@ const SubBreed = ({breed, subBreed, show, close}) => {
                 <Row className="text-center text-capitalize col-12">
                     <h5>More Images</h5>
                 </Row>
-                <Row className="text-center m-auto">
+                <Row className="text-center m-auto p-auto">
                     <BreedImage breedName={breed} numOfImg={4}/>
                 </Row>
                 </>
