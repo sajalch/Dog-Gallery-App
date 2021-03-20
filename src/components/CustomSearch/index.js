@@ -37,7 +37,7 @@ function CustomSearch({breeds, show, close}) {
           <Modal.Title >Custom Search</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Row>
+          <Row >
             <Col lg="6">
             <select ref={breedOption} style={{width:"80%"}}>
               <option value="#">Select a Breed</option>
@@ -50,7 +50,7 @@ function CustomSearch({breeds, show, close}) {
             </Col>
           </Row>
           <div className="text-center mt-3">
-            <Button variant="primary" onClick={handleGetImage}>Get Images</Button>
+            <Button variant="success" onClick={handleGetImage}>Get Images</Button>
           </div>
         </Modal.Body>
         <Modal.Footer>
@@ -59,8 +59,8 @@ function CustomSearch({breeds, show, close}) {
               <Row className="text-center text-capitalize col-12">
                 <h5>Showing {numOfImg} images of {breedName}</h5>
               </Row>
-              <br/><br/>
-              <Row className="text-center">
+              <br/>
+              <Row className="justify-content-md-center text-center m-auto p-auto">
                 <BreedImage breedName={breedName} numOfImg={numOfImg}/>
               </Row>
            </>)
