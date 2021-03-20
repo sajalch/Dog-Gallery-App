@@ -9,7 +9,7 @@ const NavBar = ({breeds}) => {
     return (
         <>
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Dog-Galary</Navbar.Brand>
+            <Navbar.Brand href="#home">Dog-Gallery</Navbar.Brand>
             <Nav className="mr-auto">
             </Nav>           
             <Button variant="info" onClick={handleClick}>Custom Search</Button>
