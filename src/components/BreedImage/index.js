@@ -8,7 +8,7 @@ const BreedImage = ({breedName,numOfImg}) => {
             fetch(`https://dog.ceo/api/breed/${breedName}/images/random/${numOfImg}`)
             .then(response => response.json())
             .then(res=>{setimages(res.message)})    
-        },[numOfImg])
+        },[breedName,numOfImg])
     
     return (
         <>
