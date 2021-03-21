@@ -21,10 +21,10 @@ const CardTemplate = (props) => {
     },[props.breedName])
     return (
         <>
-            <Card style={props.styles}>
+            <Card style={props.styles} >
             <Card.Img variant="top" alt={breedName} src={!img?"#":img} style={{width:'auto', height:'6.5rem'}} />
             <Card.Body>
-                <Card.Text className="text-center text-capitalize font-weight-bold">
+                <Card.Text style={{fontSize:'.8rem'}} className="text-center text-capitalize font-weight-bold">
                     {breedName}
                 </Card.Text>
             </Card.Body>
